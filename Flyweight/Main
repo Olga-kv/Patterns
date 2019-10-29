@@ -1,0 +1,15 @@
+public class Main {
+
+    public static void main(String[]arg){
+        Army army=new Army();
+        for(int i=1;i<10;i++){
+            army.CrateSoldiers(1+i,1+i," type 1",100,"other");
+        }
+        for (int j=0;j<5;j++){
+            army.CrateSoldiers(2+j,2+j," type 2",500,"other");
+
+        }
+
+        army.paint();
+    }
+}
