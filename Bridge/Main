@@ -1,0 +1,23 @@
+public class Main {
+
+   public static void main(String [] args){
+       TV tv = new TV();
+       AdvancedRemoteController my_controller= new AdvancedRemoteController(tv);
+
+       tv.PrintInfo();
+
+       my_controller.Power();
+       my_controller.ChangeChannelDown();
+       my_controller.Mute();
+
+       tv.PrintInfo();
+   }
+
+
+
+
+
+
+
+
+}
