@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String [] args){
+        HouseWithGarage houseWithGarage = new HouseWithGarage();
+        HouseWithPool houseWithPool =new HouseWithPool();
+
+        Director dir = new Director();
+        dir.SetHouseBuilder(houseWithGarage);
+        dir.ConstructHouse();
+
+        House my_house=dir.GetHouse();
+        my_house.PrintInfo();
+    }
+}
