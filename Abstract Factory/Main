@@ -1,0 +1,14 @@
+public class Main {
+
+    public static void main (String[] args)
+    {
+       // AbstractFactory factory= new BlueFactory();
+        AbstractFactory factory_1=new YellowFactory();
+        // AbstractFactory factory_2= new UsualFactory();
+
+      IButton b = factory_1.getButton();
+      b.draw();
+      IText t = factory_1.getText();
+      t.draw();
+    }
+}
