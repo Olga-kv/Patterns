@@ -1,0 +1,14 @@
+public class Main {
+
+    public static void main(String[]arg){
+        SD sd=new SD();
+        Laptop laptop = new Laptop();
+        laptop.InsertMemoryCard(sd);
+
+        MicroSD micro_sd=new MicroSD();
+        //laptop.InsertMemoryCard(micro_sd);    //Doesn't work
+        CardReader reader=new CardReader(micro_sd);
+        laptop.InsertMemoryCard(reader);
+
+    }
+}
