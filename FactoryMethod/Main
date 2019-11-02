@@ -1,0 +1,12 @@
+public class Main {
+
+    public static void main (String[] args){
+        //APrinterFactory p = new CanonPrinterFactory();
+        APrinterFactory p_2=new HPPrinterFactory();
+
+
+        APrinter printer =p_2.CreatePrinter();
+        printer.Print();
+
+    }
+}
