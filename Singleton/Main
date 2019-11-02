@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args){
+        Singleton singleton= Singleton.getSingletonInstance("value_1");
+        Singleton singleton2=Singleton.getSingletonInstance("value_2");
+
+        System.out.println(singleton.value+"\n");
+        System.out.println(singleton2.value);
+    }
+}
