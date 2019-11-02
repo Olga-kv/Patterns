@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String []arg){
+        ACookie cookie= new CoconutCookie(10,"Square");
+        ACookie cloneCookie=cookie.Clone();
+
+        cookie.DisplayInfo();
+        System.out.println("\nClone cookie: ");
+        cloneCookie.DisplayInfo();
+        cloneCookie.Eat();
+        System.out.println("\n");
+
+        ACookie cookie1=new GingerCookie(15,"Round","Yellow");
+        ACookie cloneCookie1 = cookie1.Clone();
+
+        cookie1.DisplayInfo();
+        System.out.println("\nClone cookie: ");
+        cloneCookie1.DisplayInfo();
+
+    }
+}
