@@ -3,7 +3,7 @@ public class Main {
         Singleton singleton= Singleton.getSingletonInstance("value_1");
         Singleton singleton2=Singleton.getSingletonInstance("value_2");
 
-        System.out.println(singleton.value+"\n");
-        System.out.println(singleton2.value);
+        System.out.println(singleton.value+"\n"); //value_1
+        System.out.println(singleton2.value); //value_1
     }
 }
